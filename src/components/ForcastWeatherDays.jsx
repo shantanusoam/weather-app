@@ -12,7 +12,7 @@ const ForcastWeatherDays = ({ data }) => {
    
       <div className="flex flex-col justify-between  text-black w-screen">
         {data.map((item) => (
-          <div className="flex flex-row w-1/2 p-1 text-xl items-center" key={item.id}>
+          <div className="flex flex-row lg:w-1/2 w-full  text-xl items-center" key={item.id}>
             <div className="flex flex-row w-full">
               {convertUnixTimestamp_Days(item.dt)}
             </div>

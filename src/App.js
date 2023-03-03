@@ -41,7 +41,7 @@ function App() {
   }
 
   return (
-    <div className="app flex flex-col justify-center items-center bg-slate-200">
+    <div className="app flex flex-col justify-center lg:items-center  bg-slate-200">
 
       <div className="search">
         <input
@@ -77,7 +77,7 @@ function App() {
         </div>
     </div>
       }
-     { Flocation&&<div className="container w-2/3">
+     { Flocation&&<div className="container w-2/3 ">
         <div className="top">
         <div className="flex flex-row gap-3 text-orange-500 text-xl font-medium ml-6">
             <p>{convertUnixTimestamp_Days(data.dt)}</p>
@@ -127,7 +127,7 @@ function App() {
 
 
       </div>}
-      <div className='flex lg:flex-row flex-col w-screen mt-20 w-4/5'>
+      <div className='flex lg:flex-row flex-col w-screen mt-20 lg:w-4/5 lg:ml-0 mx-4'>
       <div className='lg:w-1/2 w-full'>{Hlocation&&<HourleyWeatherChart hourlyData={Hlocation}/>}</div>
         <div className='lg:w-1/2 w-full lg:ml-8'>   {Flocation&&<ForcastWeatherDays data={Flocation}/>}</div>
  
