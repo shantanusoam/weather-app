@@ -44,6 +44,7 @@ function App() {
     <div className="app flex flex-col justify-center lg:items-center  bg-slate-200">
 
       <div className="search">
+        <h2 className='text-2xl pb-0 mb-4 border-b-2 border-orange-500'> Search City name For Weather Forcast</h2>
         <input
           value={location}
           onChange={event => setLocation(event.target.value)}
@@ -77,7 +78,7 @@ function App() {
         </div>
     </div>
       }
-     { Flocation&&<div className="container w-2/3 ">
+     { Flocation&&<div className="container w-4/5 ">
         <div className="top">
         <div className="flex flex-row gap-3 text-orange-500 text-xl font-medium ml-6">
             <p>{convertUnixTimestamp_Days(data.dt)}</p>
